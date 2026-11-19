@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Riyaz Khan — 3D Animator & Graphic Designer</title>
+  <meta name="description" content="Portfolio of H. Riyaz Khan, B.Sc. Animation student and aspiring 3D Animator & Graphic Designer from Sriperumbudur, Tamil Nadu." />
+  <meta name="theme-color" content="#EFEBE3" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Space+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+
+  <!-- Loader -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__cube"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <p class="mono">RENDERING PORTFOLIO<span id="loaderPct">0</span>%</p>
+  </div>
+
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__logo" data-magnetic>RK<span>.</span></a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Work</a>
+      <a href="#journey">Journey</a>
+      <a href="#contact" class="nav__cta">Let's talk</a>
+    </nav>
+    <button class="nav__burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <canvas id="mesh" aria-hidden="true"></canvas>
+      <div class="hero__grid">
+        <div class="hero__text">
+          <p class="mono tag"><span class="dot"></span> Open to entry-level roles · 2026</p>
+          <h1 class="hero__name" aria-label="Riyaz Khan">
+            <span class="line"><span class="split">RIYAZ</span></span>
+            <span class="line"><span class="split outline">KHAN</span></span>
+          </h1>
+          <p class="hero__role">
+            <span class="swap" id="swap">3D Animator</span><span class="caret">_</span>
+            <em>&amp; Graphic Designer</em>
+          </p>
+          <p class="hero__lead">
+            B.Sc. Animation student turning ideas into moving, living visuals with Autodesk Maya, Adobe Creative Suite and a love for visual storytelling.
+          </p>
+          <div class="hero__cta">
+            <a href="#work" class="btn btn--solid" data-magnetic>See my work <b>↓</b></a>
+            <a href="assets/Riyaz_Khan_Resume.pdf" download class="btn btn--ghost" data-magnetic>Download CV</a>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <div class="portrait">
+            <div class="portrait__back"></div>
+            <div class="portrait__frame" id="tilt">
+              <img src="assets/riyaz.jpg" alt="Portrait of H. Riyaz Khan" width="1094" height="1402" />
+            </div>
+            <svg class="badge" viewBox="0 0 200 200" aria-hidden="true">
+              <defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+              <text><textPath href="#circ">3D ANIMATOR • GRAPHIC DESIGNER • MAYA • ADOBE • </textPath></text>
+            </svg>
+            <div class="chip chip--a mono">Maya</div>
+            <div class="chip chip--b mono">Design</div>
+            <div class="chip chip--c mono">Motion</div>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll mono" aria-label="Scroll down"><span></span>Scroll</a>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>3D MODELING</span><i>✦</i><span>ANIMATION</span><i>✦</i><span>GRAPHIC DESIGN</span><i>✦</i><span>AUTODESK MAYA</span><i>✦</i><span>2D DESIGN</span><i>✦</i><span>VISUAL STORYTELLING</span><i>✦</i>
+        <span>3D MODELING</span><i>✦</i><span>ANIMATION</span><i>✦</i><span>GRAPHIC DESIGN</span><i>✦</i><span>AUTODESK MAYA</span><i>✦</i><span>2D DESIGN</span><i>✦</i><span>VISUAL STORYTELLING</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <p class="mono eyebrow reveal">/01 — About</p>
+      <div class="about__grid">
+        <h2 class="big reveal">I build <em>worlds</em> one polygon, one frame at a time.</h2>
+        <div class="about__body reveal">
+          <p>I'm a motivated B.Sc. Animation student based in Sriperumbudur, Tamil Nadu, looking for an entry-level opportunity as a <strong>3D Animator or Graphic Designer</strong>.</p>
+          <p>I want to apply my skills in Autodesk Maya, Adobe Creative Suite, Canva, 2D design and 3D modeling to create engaging visual content, contribute to creative projects and keep growing my professional production skills.</p>
+          <div class="facts">
+            <div><span class="mono">Based in</span><b>Sriperumbudur, TN</b></div>
+            <div><span class="mono">Studying</span><b>B.Sc. Animation</b></div>
+            <div><span class="mono">Languages</span><b>Tamil · English</b></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section skills" id="skills">
+      <p class="mono eyebrow reveal">/02 — Toolkit</p>
+      <h2 class="big reveal">The <em>tools</em> in my pipeline.</h2>
+      <div class="cards">
+        <article class="card reveal" data-tilt>
+          <span class="card__no mono">01</span>
+          <div class="card__icon"><svg viewBox="0 0 64 64"><path d="M32 6 56 20v24L32 58 8 44V20z"/><path d="M8 20l24 14 24-14M32 34v24"/></svg></div>
+          <h3>Autodesk Maya</h3>
+          <p>3D modeling and animation workflow — from blocking shapes to bringing them to life.</p>
+        </article>
+        <article class="card reveal" data-tilt>
+          <span class="card__no mono">02</span>
+          <div class="card__icon"><svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="22"/><path d="M32 10c-10 12-10 32 0 44M32 10c10 12 10 32 0 44M10 32h44"/></svg></div>
+          <h3>Adobe Creative Suite</h3>
+          <p>Creative design and visual editing across the Adobe ecosystem.</p>
+        </article>
+        <article class="card reveal" data-tilt>
+          <span class="card__no mono">03</span>
+          <div class="card__icon"><svg viewBox="0 0 64 64"><rect x="10" y="10" width="44" height="44" rx="6"/><path d="M10 26h44M26 26v28"/></svg></div>
+          <h3>Canva</h3>
+          <p>Graphic and layout design for clean, quick and eye-catching visuals.</p>
+        </article>
+        <article class="card reveal" data-tilt>
+          <span class="card__no mono">04</span>
+          <div class="card__icon"><svg viewBox="0 0 64 64"><path d="M10 50 26 14l12 26 8-14 8 24z"/></svg></div>
+          <h3>2D Design</h3>
+          <p>Strong composition, colour and typography for posters, social and brand work.</p>
+        </article>
+        <article class="card reveal" data-tilt>
+          <span class="card__no mono">05</span>
+          <div class="card__icon"><svg viewBox="0 0 64 64"><path d="M14 24 32 14l18 10v20L32 54 14 44z"/><path d="M14 24l18 10 18-10M32 34v20"/></svg></div>
+          <h3>3D Modeling</h3>
+          <p>Building clean, well-formed models ready for animation and rendering.</p>
+        </article>
+        <article class="card card--accent reveal" data-tilt>
+          <span class="card__no mono">06</span>
+          <div class="card__icon"><svg viewBox="0 0 64 64"><path d="M8 32h12l6-16 10 32 6-16h14"/></svg></div>
+          <h3>Visual Storytelling</h3>
+          <p>Every frame should say something. I design with story and emotion in mind.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="section work" id="work">
+      <p class="mono eyebrow reveal">/03 — Showcase</p>
+      <h2 class="big reveal">Selected <em>work</em>.</h2>
+      <p class="work__note reveal mono">Projects are loading… Replace the tiles below with your Maya renders, turntables and design pieces (see README).</p>
+      <div class="gallery">
+        <!-- Replace each .tile with: <a class="tile" href="#"><img src="assets/your-image.jpg" alt="Project title"><div class="tile__info"><b>Project title</b><span>Maya · 3D Modeling</span></div></a> -->
+        <div class="tile tile--lg reveal">
+          <div class="tile__art art-1"></div>
+          <div class="tile__info"><b>3D Model — Coming soon</b><span>Autodesk Maya · Modeling</span></div>
+        </div>
+        <div class="tile reveal">
+          <div class="tile__art art-2"></div>
+          <div class="tile__info"><b>Character Animation</b><span>Maya · Animation</span></div>
+        </div>
+        <div class="tile reveal">
+          <div class="tile__art art-3"></div>
+          <div class="tile__info"><b>Poster Design</b><span>Adobe · Graphic Design</span></div>
+        </div>
+        <div class="tile tile--wide reveal">
+          <div class="tile__art art-4"></div>
+          <div class="tile__info"><b>Social Media Pack</b><span>Canva · 2D Design</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNEY -->
+    <section class="section journey" id="journey">
+      <p class="mono eyebrow reveal">/04 — Journey</p>
+      <h2 class="big reveal">Where I'm <em>headed</em>.</h2>
+      <div class="timeline">
+        <div class="step reveal">
+          <span class="step__year mono">Now</span>
+          <div class="step__dot"></div>
+          <div class="step__body">
+            <h3>B.Sc. Animation</h3>
+            <p>HETA Institute of Technology — currently pursuing.</p>
+          </div>
+        </div>
+        <div class="step reveal">
+          <span class="step__year mono">Next</span>
+          <div class="step__dot"></div>
+          <div class="step__body">
+            <h3>Entry-level 3D Animator / Graphic Designer</h3>
+            <p>Seeking an opportunity to gain industry experience and contribute to animation and graphic design projects.</p>
+          </div>
+        </div>
+        <div class="step reveal">
+          <span class="step__year mono">2027</span>
+          <div class="step__dot"></div>
+          <div class="step__body">
+            <h3>Graduation</h3>
+            <p>Expected completion of B.Sc. Animation.</p>
+          </div>
+        </div>
+      </div>
+      <div class="interests reveal">
+        <span class="mono">Interests</span>
+        <ul>
+          <li>3D Animation</li><li>3D Modeling</li><li>Graphic Design</li><li>Visual Storytelling</li><li>Digital Content Creation</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <p class="mono eyebrow reveal">/05 — Contact</p>
+      <h2 class="mega reveal">Let's make<br/>something <em>move</em>.</h2>
+      <div class="contact__row reveal">
+        <a class="contact__item" href="mailto:riyaz2452007@gmail.com" data-magnetic>
+          <span class="mono">Email</span><b>riyaz2452007@gmail.com</b>
+        </a>
+        <a class="contact__item" href="tel:+918870155830" data-magnetic>
+          <span class="mono">Phone</span><b>+91 88701 55830</b>
+        </a>
+        <a class="contact__item" href="https://wa.me/918870155830" target="_blank" rel="noopener" data-magnetic>
+          <span class="mono">WhatsApp</span><b>Message me ↗</b>
+        </a>
+      </div>
+      <button class="btn btn--solid copy" id="copyMail" data-magnetic>Copy email</button>
+      <p class="mono contact__loc">Sriperumbudur, Tamil Nadu, India · References available on request</p>
+    </section>
+  </main>
+
+  <footer class="footer mono">
+    <span>© <span id="year">2026</span> H. Riyaz Khan</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <div class="toast mono" id="toast">Email copied!</div>
+  <script src="script.js"></script>
+</body>
+</html>
